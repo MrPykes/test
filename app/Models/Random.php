@@ -10,6 +10,8 @@ class Random extends Model
     use HasFactory;
 
 
+    protected $fillable = ['values'];
+
     public function breakdown()
     {
         return $this->hasMany(Breakdown::class);
